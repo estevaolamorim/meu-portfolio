@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #1a252f;
+    color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid #3498db;
+}
+
+.header-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content p{
+    font-size: 1.2rem;
+    color: #bdc3c7;
+}
+
+.container{
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h2{
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag{
+    background-color: #e8f4fd;
+    color: #2980b9;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid #3498db;
+}
+
+.project-item{
+    margin-bottom: 2rem;
+}
+
+.project-item:last-child{
+    margin-bottom: 0;
+}
+
+.project-item h3{
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a252f;
+    color: #7f8c8d;
+    margin-top: 2rem;
+}
