@@ -8,90 +8,131 @@
 </head>
 <body>
 
-    <header class="fade-in">
-        <div class="header-content">
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#estudo">Estudo</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero fade-in">
+        <div class="hero-content">
             <h1>Estevão Lorena Amorim</h1>
-            <p>Estudante de Ciência da Computação (BCC) | Desenvolvedor Front-end</p>
+            <p>Estudante de Ciência da Computação | Desenvolvedor Front-end</p>
         </div>
     </header>
 
     <main class="container">
-        <!-- Seção Sobre Mim -->
-        <section id="sobre" class="card hidden">
+        
+        <!-- Sobre Mim -->
+        <section id="sobre" class="section hidden">
             <h2>Sobre Mim</h2>
             <p>
-                Sou estudante de Ciência da Computação na Universidade Federal de Uberlândia (UFU). 
-                Busco minha primeira oportunidade profissional na área de tecnologia, trazendo comigo 
-                uma forte base de responsabilidade, comunicação e trabalho em equipe adquirida no 
-                setor de atendimento ao público. Sou focado em aprender, resolver problemas reais 
-                e evoluir continuamente na programação, unindo o rigor da pesquisa acadêmica à prática.
+                Busco minha primeira oportunidade profissional na área de tecnologia, unindo o rigor da 
+                pesquisa acadêmica à prática de mercado. Trago comigo uma forte base de responsabilidade, 
+                comunicação e trabalho em equipe, focado em aprender, resolver problemas reais e 
+                evoluir continuamente na programação.
             </p>
         </section>
 
-        <!-- Seção Habilidades -->
-        <section id="habilidades" class="card hidden">
-            <h2>Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">HTML & CSS</span>
-                <span class="skill-tag">Java (POO)</span>
-                <span class="skill-tag">C / C++</span>
-                <span class="skill-tag">Figma & Canva</span>
-            </div>
-        </section>
-
-        <!-- Seção Experiência -->
-        <section id="experiencia" class="card hidden">
-            <h2>Experiência Profissional e Acadêmica</h2>
+        <!-- Estudo / Acadêmico -->
+        <section id="estudo" class="section hidden">
+            <h2>Estudo e Pesquisa</h2>
             
-            <div class="project-item">
-                <h3>Iniciação Científica (UFU)</h3>
-                <p><strong>Período:</strong> Março de 2026 — Atual</p>
-                <p>
-                    Pesquisa acadêmica e desenvolvimento científico na área de Ciência da Computação. 
-                    Foco no aprofundamento teórico, investigação orientada e aplicação de metodologias 
-                    para resolução de problemas complexos, expandindo os conhecimentos além da 
-                    grade curricular padrão.
-                </p>
-            </div>
-
-            <div class="project-item">
-                <h3>ASCII — Empresa Júnior de Computação (UFU)</h3>
-                <p><strong>Cargo:</strong> Desenvolvedor e Membro de Marketing (Atual)</p>
-                <p>
-                    Atuação focada em entregar soluções tecnológicas e vivenciar a prática de mercado. 
-                    Como desenvolvedor, colaboro na criação e manutenção de interfaces web. No núcleo 
-                    de marketing, atuo na criação de identidades visuais utilizando Figma e Canva, 
-                    além de gerenciar postagens e estruturar campanhas para aumentar o engajamento.
-                </p>
-            </div>
-
-            <div class="project-item">
-                <h3>Auxiliar de Garçom — Contento Cucina (Cardoso Adega Ltda)</h3>
-                <p><strong>Período:</strong> Setembro de 2025 — Atual</p>
-                <p>
-                    Atuação direta no atendimento ao público em um ambiente de ritmo acelerado. 
-                    Desenvolvimento contínuo de <strong>trabalho em equipe</strong> e foco no 
-                    <strong>cumprimento de prazos e tempos de entrega</strong>. Essa vivência garante 
-                    excelente relacionamento e comunicação com os clientes, além de capacidade de 
-                    organização e resolução de problemas sob pressão.
-                </p>
-            </div>
-
-            <div class="project-item">
-                <h3>CraftCode (Projeto EdTech)</h3>
-                <p><strong>Tecnologias:</strong> React, HTML, CSS, Figma.</p>
-                <p>
-                    Projeto em desenvolvimento de uma plataforma educacional online voltada para o ensino 
-                    de programação. Atuo diretamente na ideação de UI/UX e na implementação do Front-end 
-                    para garantir uma navegação fluida e responsiva para os alunos.
-                </p>
+            <div class="resume-item">
+                <div class="resume-header">
+                    <h3>Iniciação Científica <span class="inst">UFU</span></h3>
+                    <span class="badge">Mar 2026 — Atual</span>
+                </div>
+                <div class="resume-role">Pesquisador Acadêmico em Ciência da Computação</div>
+                <ul class="resume-list">
+                    <li>Foco no aprofundamento teórico, investigação orientada e aplicação de metodologias para resolução de problemas complexos.</li>
+                    <li>Expansão dos conhecimentos práticos e teóricos além da grade curricular padrão do curso de Bacharelado.</li>
+                </ul>
             </div>
         </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="section hidden">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <span class="skill-pill">React</span>
+                <span class="skill-pill">HTML & CSS</span>
+                <span class="skill-pill">Java (POO)</span>
+                <span class="skill-pill">C / C++</span>
+                <span class="skill-pill">Figma & Canva</span>
+            </div>
+        </section>
+
+        <!-- Experiência -->
+        <section id="experiencia" class="section hidden">
+            <h2>Experiência Profissional</h2>
+            
+            <div class="resume-item">
+                <div class="resume-header">
+                    <h3>ASCII — Empresa Júnior de Computação <span class="inst">UFU</span></h3>
+                    <span class="badge">Atual</span>
+                </div>
+                <div class="resume-role">Desenvolvedor e Membro de Marketing</div>
+                <ul class="resume-list">
+                    <li>Colaboração na criação e manutenção de interfaces web, atuando no ciclo de vida do desenvolvimento de software.</li>
+                    <li>Criação de identidades visuais utilizando Figma e Canva para aumento de engajamento.</li>
+                    <li>Gerenciamento de postagens e estruturação de campanhas de marketing dos projetos e eventos.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-header">
+                    <h3>Contento Cucina <span class="inst">Cardoso Adega Ltda</span></h3>
+                    <span class="badge">Set 2025 — Atual</span>
+                </div>
+                <div class="resume-role">Auxiliar de Garçom</div>
+                <ul class="resume-list">
+                    <li>Atuação direta no atendimento ao público em um ambiente de ritmo acelerado.</li>
+                    <li>Forte desenvolvimento de trabalho em equipe, organização e resolução de problemas sob pressão.</li>
+                    <li>Cumprimento rigoroso de prazos e tempos de entrega, garantindo excelente relacionamento e comunicação com os clientes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="section hidden">
+            <h2>Projetos em Destaque</h2>
+            
+            <div class="resume-item">
+                <div class="resume-header">
+                    <h3>CraftCode <span class="inst">Projeto EdTech</span></h3>
+                    <span class="badge">Em Desenvolvimento</span>
+                </div>
+                <div class="resume-role">Desenvolvedor Front-end e UI/UX</div>
+                <ul class="resume-list">
+                    <li>Plataforma educacional online voltada para o ensino de programação.</li>
+                    <li>Ideação e prototipagem de UI/UX utilizando Figma, garantindo a melhor experiência do usuário.</li>
+                    <li>Implementação do Front-end utilizando React, HTML e CSS com foco em responsividade e navegação fluida.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="section hidden">
+            <h2>Contato</h2>
+            <p>Estou sempre aberto a novas oportunidades e conexões na área de tecnologia.</p>
+            <ul class="resume-list" style="margin-top: 15px;">
+                <li><strong>E-mail:</strong> seu.email@exemplo.com</li>
+                <li><strong>LinkedIn:</strong> linkedin.com/in/seu-perfil</li>
+                <li><strong>GitHub:</strong> github.com/portfolio</li>
+            </ul>
+        </section>
+
     </main>
 
-    <footer class="hidden">
-        <p>&copy; 2026 Estevão Lorena Amorim. Criado com dedicação.</p>
+    <footer>
+        <p>&copy; 2026 Estevão Lorena Amorim.</p>
     </footer>
 
     <script src="src/script.js"></script>
