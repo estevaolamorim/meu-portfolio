@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estevão Lorena Amorim | Portfólio</title>
-    <!-- O caminho agora aponta para a pasta src -->
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
 
-    <header>
+    <header class="fade-in">
         <div class="header-content">
             <h1>Estevão Lorena Amorim</h1>
             <p>Estudante de Ciência da Computação (BCC) | Desenvolvedor Front-end</p>
@@ -17,19 +16,20 @@
     </header>
 
     <main class="container">
-        <section id="sobre" class="card">
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="card hidden">
             <h2>Sobre Mim</h2>
             <p>
                 Sou estudante de Ciência da Computação na Universidade Federal de Uberlândia (UFU). 
-                Atualmente, busco minha primeira oportunidade profissional na área de tecnologia. 
-                Desenvolvi uma base sólida de responsabilidade, trabalho em equipe e comunicação 
-                através da minha atuação no setor de atendimento presencial, e agora aplico essa 
-                mesma dedicação para construir soluções de software. Sou focado em aprender, 
-                resolver problemas reais e evoluir na programação.
+                Busco minha primeira oportunidade profissional na área de tecnologia, trazendo comigo 
+                uma forte base de responsabilidade, comunicação e trabalho em equipe adquirida no 
+                setor de atendimento ao público. Sou focado em aprender, resolver problemas reais 
+                e evoluir continuamente na programação, unindo o rigor da pesquisa acadêmica à prática.
             </p>
         </section>
 
-        <section id="habilidades" class="card">
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="card hidden">
             <h2>Habilidades Técnicas</h2>
             <div class="skills-grid">
                 <span class="skill-tag">React</span>
@@ -40,37 +40,60 @@
             </div>
         </section>
 
-        <section id="projetos" class="card">
-            <h2>Projetos e Experiência Acadêmica</h2>
+        <!-- Seção Experiência -->
+        <section id="experiencia" class="card hidden">
+            <h2>Experiência Profissional e Acadêmica</h2>
             
             <div class="project-item">
-                <h3>CraftCode (Plataforma EdTech)</h3>
-                <p><strong>Tecnologias:</strong> React, HTML, CSS, Figma.</p>
+                <h3>Iniciação Científica (UFU)</h3>
+                <p><strong>Período:</strong> Março de 2026 — Atual</p>
                 <p>
-                    Projeto em desenvolvimento de uma plataforma educacional para cursos de programação. 
-                    Atuo diretamente na ideação de UI/UX utilizando Figma e Canva, e na implementação 
-                    do Front-end para garantir uma navegação fluida e responsiva para os alunos.
+                    Pesquisa acadêmica e desenvolvimento científico na área de Ciência da Computação. 
+                    Foco no aprofundamento teórico, investigação orientada e aplicação de metodologias 
+                    para resolução de problemas complexos, expandindo os conhecimentos além da 
+                    grade curricular padrão.
                 </p>
             </div>
 
             <div class="project-item">
-                <h3>Desenvolvimento Colaborativo (UFU)</h3>
-                <p><strong>Tecnologias:</strong> C, C++, Java.</p>
+                <h3>ASCII — Empresa Júnior de Computação (UFU)</h3>
+                <p><strong>Cargo:</strong> Desenvolvedor e Membro de Marketing (Atual)</p>
                 <p>
-                    Ao longo do curso, atuo no desenvolvimento de sistemas e resolução de problemas lógicos 
-                    em equipes (junto a colegas como Davi, Leonardo, Sergio e Walter). O foco principal 
-                    desses projetos envolve Estrutura de Dados, algoritmos complexos e Arquitetura 
-                    Orientada a Objetos.
+                    Atuação focada em entregar soluções tecnológicas e vivenciar a prática de mercado. 
+                    Como desenvolvedor, colaboro na criação e manutenção de interfaces web. No núcleo 
+                    de marketing, atuo na criação de identidades visuais utilizando Figma e Canva, 
+                    além de gerenciar postagens e estruturar campanhas para aumentar o engajamento.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <h3>Auxiliar de Garçom — Contento Cucina (Cardoso Adega Ltda)</h3>
+                <p><strong>Período:</strong> Setembro de 2025 — Atual</p>
+                <p>
+                    Atuação direta no atendimento ao público em um ambiente de ritmo acelerado. 
+                    Desenvolvimento contínuo de <strong>trabalho em equipe</strong> e foco no 
+                    <strong>cumprimento de prazos e tempos de entrega</strong>. Essa vivência garante 
+                    excelente relacionamento e comunicação com os clientes, além de capacidade de 
+                    organização e resolução de problemas sob pressão.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <h3>CraftCode (Projeto EdTech)</h3>
+                <p><strong>Tecnologias:</strong> React, HTML, CSS, Figma.</p>
+                <p>
+                    Projeto em desenvolvimento de uma plataforma educacional online voltada para o ensino 
+                    de programação. Atuo diretamente na ideação de UI/UX e na implementação do Front-end 
+                    para garantir uma navegação fluida e responsiva para os alunos.
                 </p>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="hidden">
         <p>&copy; 2026 Estevão Lorena Amorim. Criado com dedicação.</p>
     </footer>
 
-    <!-- O caminho agora aponta para a pasta src -->
     <script src="src/script.js"></script>
 </body>
 </html>
