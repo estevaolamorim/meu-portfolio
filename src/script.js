@@ -1,8 +1,20 @@
 document.addEventListener("DOMContentLoaded", function(){
-    exibirMensagemBoasVindas();
+    ativarAnimacoesRolagem();
 });
 
-function exibirMensagemBoasVindas(){
-    const mensagem = "Olá, recrutador! O portfólio do Estevão foi carregado com sucesso.";
-    console.log(mensagem);
+function ativarAnimacoesRolagem(){
+    const observador = new IntersectionObserver(function(entradas){
+        entradas.forEach(function(entrada){
+            if(entrada.isIntersecting){
+                entrada.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    const elementos = document.querySelectorAll(".hidden");
+    elementos.forEach(function(elemento){
+        observador.observe(elemento);
+    });
 }
