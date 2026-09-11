@@ -6,27 +6,28 @@
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f7f7f4;
-    color: #222;
-    line-height: 1.6;
-    padding-top: 70px; /* Evita que o menu fixo encubra o conteúdo */
+    background-color: #f4f4f0;
+    color: #1a1a1a;
+    line-height: 1.7;
+    padding-top: 70px;
+    scroll-behavior: smooth;
 }
 
-/* Barra de Navegação Horizontal Fixa */
+/* Barra de Navegação */
 .navbar{
-    background-color: rgba(247, 247, 244, 0.95);
+    background-color: rgba(244, 244, 240, 0.95);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 65px;
-    border-bottom: 1px solid #e1e1db;
+    height: 70px;
+    border-bottom: 1px solid #e0e0da;
     z-index: 1000;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
 }
 
 .nav-container{
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -36,9 +37,9 @@ body{
 }
 
 .nav-logo{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.1rem;
-    color: #111;
+    color: #0f2b46;
 }
 
 .nav-links{
@@ -49,45 +50,115 @@ body{
 
 .nav-links a{
     text-decoration: none;
-    color: #555;
+    color: #555555;
     font-weight: 500;
     font-size: 0.9rem;
     transition: color 0.2s ease;
 }
 
 .nav-links a:hover{
-    color: #000;
+    color: #0f2b46;
 }
 
 /* Container Principal */
 .container{
     max-width: 800px;
     margin: 0 auto;
-    padding: 3rem 20px;
+    padding: 2rem 20px 4rem 20px;
 }
 
+/* Estilo Hero Editorial */
+.hero{
+    margin-bottom: 3.5rem;
+    padding-top: 1rem;
+}
+
+.hero-top-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    font-family: monospace;
+    color: #555555;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.line-deco{
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: #0f2b46;
+}
+
+.main-title{
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #0f2b46;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-bio{
+    font-size: 1.15rem;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Seções */
 .section{
     margin-bottom: 3.5rem;
+    border-top: 1px solid #e0e0da;
+    padding-top: 2.5rem;
 }
 
 .section h2{
-    font-size: 1.6rem;
-    color: #111;
-    border-bottom: 1px solid #dcdce6;
-    padding-bottom: 8px;
-    margin-bottom: 25px;
-    font-weight: 600;
+    font-size: 1.5rem;
+    color: #0f2b46;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Estilo da Tabela de Ferramentas / Habilidades */
+.skills-table{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid #e0e0da;
+    gap: 20px;
+}
+
+.skills-row:last-child{
+    border-bottom: none;
+}
+
+.skills-category{
+    font-family: monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #0f2b46;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 35%;
+    flex-shrink: 0;
+}
+
+.skills-desc{
+    font-size: 0.95rem;
+    color: #333333;
+    width: 65%;
 }
 
 /* Itens de Currículo / Experiência */
 .resume-item{
     margin-bottom: 2rem;
-    border-bottom: 1px solid #eaeae5;
-    padding-bottom: 1.5rem;
-}
-
-.resume-item:last-child{
-    border-bottom: none;
 }
 
 .resume-header{
@@ -101,12 +172,12 @@ body{
 
 .resume-header h3{
     font-size: 1.15rem;
-    color: #111;
-    font-weight: 600;
+    color: #1a1a1a;
+    font-weight: 700;
 }
 
 .inst{
-    color: #666;
+    color: #666666;
     font-weight: 400;
     font-size: 0.9rem;
     margin-left: 4px;
@@ -114,31 +185,31 @@ body{
 
 .badge{
     font-family: monospace;
-    background-color: #eee;
-    border: 1px solid #dcdcdc;
+    background-color: transparent;
+    border: 1px solid #b0b0a8;
     padding: 2px 8px;
     font-size: 0.75rem;
-    color: #444;
+    color: #555555;
     border-radius: 4px;
 }
 
 .resume-role{
     font-style: italic;
-    color: #555;
+    color: #555555;
     margin-bottom: 10px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
-/* Listas com travessão garantido */
+/* Listas com travessão */
 .resume-list{
     list-style: none;
 }
 
 .resume-list li{
     position: relative;
-    padding-left: 18px;
+    padding-left: 20px;
     margin-bottom: 6px;
-    color: #333;
+    color: #333333;
     font-size: 0.95rem;
 }
 
@@ -146,30 +217,27 @@ body{
     content: "—";
     position: absolute;
     left: 0;
-    color: #0056b3;
-}
-
-/* Habilidades */
-.skills-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill-pill{
-    border: 1px solid #ccc;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    color: #333;
-    background-color: #fff;
+    color: #0f2b46;
+    font-weight: bold;
 }
 
 footer{
     text-align: center;
-    padding: 2rem;
-    color: #777;
+    padding: 2.5rem;
+    color: #666666;
     font-size: 0.85rem;
-    border-top: 1px solid #e1e1db;
-    margin-top: 2rem;
+    border-top: 1px solid #e0e0da;
+    margin-top: 3rem;
+}
+
+/* Animações Suaves de Rolagem */
+.reveal{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
 }
