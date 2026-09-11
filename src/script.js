@@ -1,20 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(){
-    ativarAnimacoesRolagem();
+    ativarAnimacoes();
 });
 
-function ativarAnimacoesRolagem(){
+function ativarAnimacoes(){
+    const elementos = document.querySelectorAll(".reveal");
+
     const observador = new IntersectionObserver(function(entradas){
         entradas.forEach(function(entrada){
             if(entrada.isIntersecting){
-                entrada.target.classList.add("show");
+                entrada.target.classList.add("active");
             }
         });
     }, {
         threshold: 0.1
     });
 
-    const elementos = document.querySelectorAll(".hidden");
-    elementos.forEach(function(elemento){
-        observador.observe(elemento);
+    elementos.forEach(function(el){
+        observador.observe(el);
     });
 }
